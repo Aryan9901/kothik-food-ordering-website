@@ -11,3 +11,416 @@ html {
 	height: 100%;
 	width: 100%;
 }
+
+#main {
+	width: 100%;
+	position: relative;
+}
+/* LOADER */
+#main #loader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: salmon;
+	height: 100vh;
+	width: 100%;
+	font-family: Gloss And Bloom, Gilroy, "Times New Roman", Times, serif;
+	letter-spacing: 1.7vw;
+	background: linear-gradient(80deg, #110e1f, #1b1730);
+	position: fixed;
+	overflow: hidden;
+	z-index: 9999;
+	top: 0%;
+	left: 0%;
+	color: #d2006b;
+	display: none;
+}
+
+.loader {
+	-webkit-perspective: 700px;
+	perspective: 700px;
+}
+
+.loader > span {
+	font-size: 130px;
+	/* font-family: "franklin gothic medium", sans-serif; */
+	display: inline-block;
+	animation: flip 2.6s infinite linear;
+	transform-origin: 0 70%;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+.loader > span:nth-child(even) {
+	color: white;
+}
+
+.loader > span:nth-child(2) {
+	animation-delay: 0.3s;
+}
+
+.loader > span:nth-child(3) {
+	animation-delay: 0.6s;
+}
+
+.loader > span:nth-child(4) {
+	animation-delay: 0.9s;
+}
+
+.loader > span:nth-child(5) {
+	animation-delay: 1.2s;
+}
+
+.loader > span:nth-child(6) {
+	animation-delay: 1.5s;
+}
+
+.loader > span:nth-child(7) {
+	animation-delay: 1.8s;
+}
+/* loader keyframe flip */
+@keyframes flip {
+	35% {
+		transform: rotateX(360deg);
+	}
+	100% {
+		transform: rotatex(360deg);
+	}
+}
+
+/* navbar styling */
+#main header {
+	width: 100%;
+	/* background-color: red; */
+}
+#navbar {
+	height: 10vh;
+	width: 100%;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	/* background-color: black; */
+	z-index: 2;
+	display: flex;
+}
+
+#navbar #brand {
+	width: 42%;
+	height: 100%;
+	padding: 0 2vw;
+	/* background-color: antiquewhite; */
+}
+#brand #logo-cover {
+	width: 28%;
+	height: 160%;
+	background-color: transparent;
+	/* position: relative; */
+	/* background-color: #fff; */
+	object-fit: cover;
+}
+#logo-cover img {
+	width: 100%;
+	height: 100%;
+}
+#navbar #nav-links {
+	width: 70%;
+	position: relative;
+	top: 0%;
+	height: 100%;
+	/* background-color: blue; */
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+#nav-links a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.4vw;
+	padding-bottom: 0.2vw;
+	font-weight: 700;
+}
+#nav-links a:hover {
+	border-bottom: 0.13vw solid blue;
+}
+/* home page */
+#home {
+	height: 100vh;
+	width: 100%;
+	/* background-image: url(./images/homepage-hero-f92ce3baf2.jpg); */
+	background-size: cover;
+	background-position: center;
+	/* background-color: #d2006b; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.swiper {
+	width: 600px;
+	height: 300px;
+	background-color: #d2006b;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+.swiper-wrapper {
+	color: black;
+	/* z-index: -1; */
+	/* height: 100%; */
+	/* width: 100%; */
+}
+.swiper-slide {
+	object-fit: cover;
+	/* object-position: center; */
+	height: 100%;
+	width: 100%;
+}
+.swiper-slide img {
+	height: 100%;
+	width: 100%;
+}
+.swiper h1 {
+	position: absolute;
+	top: 40%;
+	left: 34%;
+	transform: translate(-50%, -50%);
+	font-family: Gloss And Bloom, Gilroy;
+	letter-spacing: 2vw;
+	/* color: #dadada; */
+	color: transparent;
+	/* color: #fef3f8; */
+	font-size: 8vw;
+	z-index: 3;
+	font-weight: 800;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #fef3f5;
+}
+.swiper i {
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	font-size: 11vw;
+	font-weight: 900;
+	color: #fef3f8;
+	transform: translate(-50%, -50%);
+	animation: shadow 1s linear infinite alternate-reverse;
+	text-shadow: 9px 0vw 1vw white;
+	z-index: 3;
+}
+@keyframes shadow {
+	0% {
+		text-shadow: 9px 0vw 2vw #dadada;
+	}
+	25% {
+		text-shadow: 9px 0vw 3vw white;
+	}
+	50% {
+		text-shadow: 9px 0vw 5vw #e91e63;
+	}
+	75% {
+		text-shadow: 9px 0vw 3vw green;
+	}
+	100% {
+		text-shadow: 9px 0vw 2vw #adadad;
+	}
+}
+.swiper p {
+	font-size: 3vw;
+	font-weight: 600;
+	font-family: Gilroy;
+	z-index: 3;
+	position: absolute;
+	top: 56%;
+	/* color: #fef3f8; */
+	color: #dadada;
+	white-space: nowrap;
+	left: 34%;
+	transform: translate(-50%, -50%);
+	opacity: 0.98;
+}
+.reveal .parent {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	overflow-y: hidden;
+}
+.child span {
+	display: inline-block;
+}
+.reveal .parent .child {
+	display: block;
+}
+.swiper p .a {
+	border-right: 0.13vw solid #adadad;
+	padding-right: 1vw;
+	/* margin-right: 2vw;
+	width: 100%; */
+}
+/* footer */
+.contact {
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #222;
+}
+.contact .content {
+	max-width: 800px;
+	text-align: center;
+}
+.contact .content h2 {
+	font-size: 3em;
+	color: #fff;
+	font-weight: 500;
+}
+.contact .content p {
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	margin-top: 30px;
+}
+.container .contactInfo {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.container .contactInfo .box {
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+	cursor: pointer;
+}
+.container .contactInfo .box .icon {
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.75em;
+	transition: 0.5s;
+}
+.container .contactInfo .box:hover .icon {
+	background: #00bcd4;
+	color: #fff;
+}
+.container .contactInfo .box .text {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 300;
+}
+.container .contactInfo .box .text h3 {
+	font-weight: 500;
+	color: #00bcd4;
+}
+.container .contactInfo .txt {
+	color: #fff;
+	margin-top: 50px;
+	font-weight: 500;
+	padding-left: 10px;
+	border-left: 50px solid #e91e63;
+	line-height: 1em;
+}
+.sci {
+	position: relative;
+	display: flex;
+	gap: 30px;
+	margin: 20px 0;
+}
+.sci li {
+	list-style: none;
+}
+.sci li a {
+	color: #fff;
+	font-size: 2em;
+	transition: 0.5s;
+}
+.sci li a:hover {
+	color: #00bcd4;
+}
+
+.container .contactForm {
+	position: relative;
+	width: 40%;
+	background: #fff;
+	min-height: 100px;
+	padding: 60px;
+}
+.container .contactForm h2 {
+	font-size: 2em;
+	color: #333;
+	font-weight: 500;
+}
+.container .contactForm .inputBox {
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+}
+.container .contactForm .inputBox input,
+.container .contactForm .inputBox textarea {
+	width: 100%;
+	padding: 5px 0;
+	font-size: 1.1em;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.container .contactForm .inputBox span {
+	position: absolute;
+	left: 0;
+	pointer-events: none;
+	padding: 5px 0;
+	margin: 10px 0;
+	font-size: 1.1em;
+	color: #666;
+	transition: 0.5s;
+}
+.container .contactForm .inputBox input:focus ~ span,
+.container .contactForm .inputBox textarea:focus ~ span,
+.container .contactForm .inputBox input:valid ~ span,
+.container .contactForm .inputBox textarea:valid ~ span {
+	color: #e91e63;
+	font-size: 0.9em;
+	transform: translateY(-20px);
+}
+.container .contactForm .inputBox input[type="submit"] {
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+/* lets make it responsive */
+@media (max-width: 991px) {
+	.contact {
+		padding: 50px;
+	}
+	.container {
+		flex-direction: column;
+	}
+	.container .contactInfo,
+	.container .contactForm {
+		width: 100%;
+	}
+	.container .contactForm {
+		padding: 50px 30px;
+	}
+}

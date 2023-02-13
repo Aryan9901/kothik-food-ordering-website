@@ -6,11 +6,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOTHIK-FOOD ORDERING-WEBSITE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div id="main">
+        <div id="loader">
+            <div class="loader">
+                <span>K</span>
+                <span>O</span>
+                <span>T</span>
+                <span>H</span>
+                <span>I</span>
+                <span>K</span>
+            </div>
+        </div>
+        <header>
+            <div id="navbar">
+                <div id="brand">
+                    <div id="logo-cover">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                </div>
+                <div id="nav-links">
+                    <a href="#">Services</a>
+                    <a href="#">About</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Testinomial</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Timeline</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div id="home">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://images.pexels.com/photos/1267315/pexels-photo-1267315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="">
+                        </div>
+                    </div>
+                    <h1 class="reveal">KOTHIK</h1>
+                    <p class="reveal">EAT HEALTHY STAY HEALTHY</p>
+                    <i class="play fa-regular fa-circle-play"></i>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </header>
+        <div id="footer">
+            <section class="contact">
+                <div class="content">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem numquam id
+                        reprehenderit, sunt laudantium enim possimus repellat debitis et quis!</p>
+                </div>
+                <div class="container">
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>402671 Sugar Camp Road,<br>Owatonna,Minnesota,<br>55025060</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>000-000-0000</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>wrub7d78i0e@temporary-mail</p>
+                            </div>
+                        </div>
+                        <h2 class="txt">Connect with us</h2>
+                        <ul class="sci">
+                            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        </ul>
+                    </div>
 
+                    <div class="contactForm">
+                        <form>
+                            <h2>Send Message</h2>
+                            <div class="inputBox">
+                                <input type="text" name="" required="required">
+                                <span>Full Name</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" name="" required="required">
+                                <span>Email</span>
+                            </div>
+                            <div class="inputBox">
+                                <textarea required="required"></textarea>
+                                <span>Type your Message...</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+        integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/350acc314a.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
