@@ -12,6 +12,8 @@
 
 <body>
     <div id="main">
+        <div id="cursor"></div>
+        <div id="cursor1"></div>
         <div id="loader">
             <div class="loader">
                 <span>K</span>
@@ -22,7 +24,7 @@
                 <span>K</span>
             </div>
         </div>
-        <header>
+        <div id="header">
             <div id="navbar">
                 <div id="brand">
                     <div id="logo-cover">
@@ -41,98 +43,83 @@
                     <a href="#">Contact</a>
                 </div>
             </div>
+        </div>
+        <div id="maindiv">
             <div id="home">
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="">
+                <div id="topcnt">
+                    <!-- <p class="reveal">EAT HEALTHY STAY HEALTHY</p> -->
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+
+                            <div class="swiper-slide">
+                                <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img style="filter:grayscale(.4);"
+                                    src="https://images.pexels.com/photos/12803395/pexels-photo-12803395.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://images.pexels.com/photos/2096983/pexels-photo-2096983.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://images.pexels.com/photos/8939516/pexels-photo-8939516.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    alt="">
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="">
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <!-- styling text hover animation -->
+                    <div id="headingtxt">
+                        <div class="elem" id="elem1">
+                            <h1>EAT</h1>
+                            <img src="./images/eatimg.gif" alt="">
+                            <div id="overlay1" class="overlay"></div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="https://images.pexels.com/photos/1267315/pexels-photo-1267315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="">
+                        <div class="elem" id="elem2">
+                            <h1>HEALTHY</h1>
+                            <img src="./images/healthy.gif" alt="">
+                            <div id="overlay2" class="overlay"></div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="">
+                        <div class="elem" id="elem3">
+                            <h1>STAY</h1>
+                            <img src="./images/stay.gif" alt="">
+                            <div id="overlay3" class="overlay"></div>
+                        </div>
+                        <div class="elem" id="elem4">
+                            <h1>HEALTHY</h1>
+                            <img src="./images/healthy.gif" alt="">
+                            <div id="overlay4" class="overlay"></div>
                         </div>
                     </div>
-                    <h1 class="reveal">KOTHIK</h1>
-                    <p class="reveal">EAT HEALTHY STAY HEALTHY</p>
-                    <i class="play fa-regular fa-circle-play"></i>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                </div>
+                <div id="btmcnt">
+                    <div id="cardiv">
+                        <div class="cards" id="card1"></div>
+                        <div class="cards" id="card2"></div>
+                        <div class="cards" id="card3"></div>
+                        <div class="cards" id="card4"></div>
+                    </div>
                 </div>
             </div>
-        </header>
-        <div id="footer">
-            <section class="contact">
-                <div class="content">
-                    <h2>Contact Us</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem numquam id
-                        reprehenderit, sunt laudantium enim possimus repellat debitis et quis!</p>
-                </div>
-                <div class="container">
-                    <div class="contactInfo">
-                        <div class="box">
-                            <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
-                            <div class="text">
-                                <h3>Address</h3>
-                                <p>402671 Sugar Camp Road,<br>Owatonna,Minnesota,<br>55025060</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
-                            <div class="text">
-                                <h3>Phone</h3>
-                                <p>000-000-0000</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
-                            <div class="text">
-                                <h3>Email</h3>
-                                <p>wrub7d78i0e@temporary-mail</p>
-                            </div>
-                        </div>
-                        <h2 class="txt">Connect with us</h2>
-                        <ul class="sci">
-                            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="contactForm">
-                        <form>
-                            <h2>Send Message</h2>
-                            <div class="inputBox">
-                                <input type="text" name="" required="required">
-                                <span>Full Name</span>
-                            </div>
-                            <div class="inputBox">
-                                <input type="text" name="" required="required">
-                                <span>Email</span>
-                            </div>
-                            <div class="inputBox">
-                                <textarea required="required"></textarea>
-                                <span>Type your Message...</span>
-                            </div>
-                            <div class="inputBox">
-                                <input type="submit" value="Send">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
