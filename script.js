@@ -39,7 +39,7 @@ function changenavcolor() {
 }
 changenavcolor();
 function swipe() {
-	const swiper = new Swiper(".swiper", {
+	const swiper = new Swiper("#topcnt .swiper", {
 		// Optional parameters
 		direction: "horizontal",
 		loop: true,
@@ -79,10 +79,10 @@ function cursor() {
 	var heading = document.querySelector("#headingtxt");
 	main.addEventListener("mousemove", function (dets) {
 		// console.log(dets.pageY);
-		cursor.style.left = dets.pageX + 10 + "px";
-		cursor.style.top = dets.pageY + 3 + "px";
-		cursor1.style.left = dets.pageX + 10 + "px";
-		cursor1.style.top = dets.pageY - 6 + "px";
+		cursor.style.left = dets.pageX + "px";
+		cursor.style.top = dets.pageY + "px";
+		cursor1.style.left = dets.pageX + "px";
+		cursor1.style.top = dets.pageY + "px";
 	});
 	document.querySelector("#overlay1").addEventListener("mousemove", function (dets) {
 		console.log(dets);
@@ -150,3 +150,35 @@ function cursor() {
 	});
 }
 cursor();
+
+function swipe2() {
+	const swiper = new Swiper("#foodright .swiper", {
+		// Optional parameters
+		direction: "vertical",
+		effect: "coverflow",
+		grabCursor: true,
+		centeredSlides: true,
+		slidesPerView: "auto",
+		coverflowEffect: {
+			rotate: 0,
+			stretch: 0,
+			depth: 100,
+			modifier: 2,
+			slideShadows: true,
+		},
+		spaceBetween: 60,
+		loop: true,
+
+		// If we need pagination
+		pagination: {
+			el: ".swiper-pagination",
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+}
+swipe2();
