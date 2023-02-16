@@ -246,3 +246,38 @@ function list() {
 }
 
 list();
+function handleopen() {
+	var handle = document.querySelector("#handle");
+	var theme = document.querySelector("#theme");
+	var flag1 = true;
+	handle.addEventListener("click", function () {
+		if (flag1 == true) {
+			theme.style.width = "0%";
+			handle.style.right = "0%";
+			flag1 = false;
+		} else {
+			handle.style.right = "5%";
+			theme.style.width = "5%";
+			flag1 = true;
+		}
+	});
+}
+handleopen();
+
+function themechange() {
+	var rootvar = document.querySelector(":root");
+	var lighttheme = document.querySelector("#theme #light");
+	var minimaltheme = document.querySelector("#theme #minimal");
+	var darktheme = document.querySelector("#theme #dark");
+
+	// function myFunction_get() {
+	// 	// Get the styles (properties and values) for the root
+	// 	var rs = getComputedStyle(rootvar);
+	//   }
+
+	lighttheme.addEventListener("click", function () {
+		document.querySelector("#home").style.backgroundColor = "blue";
+	});
+	minimaltheme.addEventListener("click", function () {});
+	darktheme.addEventListener("click", function () {});
+}
