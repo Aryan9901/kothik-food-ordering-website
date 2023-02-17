@@ -19,6 +19,7 @@ html {
 #main {
 	width: 100%;
 	position: relative;
+	background-color: #2d2420;
 }
 /* cursor styling */
 #cursor {
@@ -28,7 +29,7 @@ html {
 	z-index: 99999999;
 	background-color: #f2e205;
 	border-radius: 50%;
-	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
 	pointer-events: none;
 }
 #cursor1 {
@@ -39,7 +40,7 @@ html {
 	z-index: 99999999;
 	background-color: #b9f80d;
 	border-radius: 50%;
-	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
 }
 
 /* LOADER */
@@ -173,6 +174,7 @@ html {
 #maindiv {
 	width: 100%;
 	position: relative;
+	/* background-color: #2d2420; */
 }
 #theme {
 	position: fixed;
@@ -190,7 +192,7 @@ html {
 	font-size: 4vw;
 	align-items: center;
 	justify-content: space-around;
-	transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
 #handle {
 	height: 7vw;
@@ -220,20 +222,21 @@ html {
 #maindiv #home {
 	height: 175vh;
 	width: 100%;
-	background-color: #2d2420;
+	/* background-color: #2d2420; */
 	border-top: 0.001px solid transparent;
 	/* position: relative; */
 }
 #home #topcnt {
 	height: 55%;
 	width: 80%;
-	background-color: #d2006b;
-	margin: 8vw auto 0% auto;
+	/* background-color: #d2006b; */
+	margin: 8vw auto 1vw auto;
 	position: relative;
 }
-#topcnt #headingtxt {
+
+#headingtxt {
 	position: absolute;
-	top: 23%;
+	top: 73%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 6;
@@ -241,7 +244,13 @@ html {
 	align-items: center;
 	justify-content: center;
 	height: 55vh;
+	/* background-color: red; */
 	/* width: 80vw; */
+}
+#home #txtcnt {
+	height: 40vh;
+	width: 100%;
+	position: relative;
 }
 #headingtxt .elem {
 	height: 55vh;
@@ -279,6 +288,7 @@ html {
 	width: 100%;
 	top: 0%;
 	background-color: #00000000;
+	cursor: none;
 }
 
 /* #topcnt p {
@@ -361,6 +371,7 @@ html {
 	background-size: cover;
 	background-position: center;
 	border-radius: 1vw;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
 }
 #cardiv .cards:hover {
 	position: relative;
@@ -384,8 +395,10 @@ html {
 /* section2 */
 #section1 {
 	width: 100%;
+	margin-top: 18vw;
+	/* padding-top: 12vw; */
 	/* height: 100vh; */
-	background-color: #2d2420;
+	/* background-color: #2d2420; */
 }
 #section1 #food {
 	margin: 0 auto;
@@ -498,7 +511,7 @@ html {
 
 #page2 {
 	position: relative;
-	background-color: #2d2420;
+	/* background-color: #2d2420; */
 	min-height: 70vh;
 	padding-bottom: 5vh;
 	padding-top: 11vw;
@@ -539,14 +552,14 @@ html {
 #section3 {
 	height: 140vh;
 	width: 100%;
-	background-color: #2d2420;
+	/* background-color: #2d2420; */
 	/* background-color: red; */
 	position: relative;
 	/* margin-bottom: 6vw; */
 }
 #part2 {
 	height: 100%;
-	background-color: #2d2420;
+	/* background-color: #2d2420; */
 	position: relative;
 	padding: 10vh 6vw;
 }
@@ -653,7 +666,7 @@ html {
 #section4 {
 	height: 120vh;
 	width: 100%;
-	background-color: #2d2420;
+	/* background-color: #2d2420; */
 	border-top: 0.1vw solid transparent;
 	overflow: hidden;
 }
@@ -852,6 +865,8 @@ html {
 	color: #fef3f8;
 	font-size: 1.4vw;
 }
+
+/* animated button */
 .price .btn {
 	height: 20%;
 	width: 100%;

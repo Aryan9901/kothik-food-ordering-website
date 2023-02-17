@@ -249,13 +249,16 @@ list();
 function handleopen() {
 	var handle = document.querySelector("#handle");
 	var theme = document.querySelector("#theme");
+	var themeicon = document.querySelector("#theme i");
 	var flag1 = true;
 	handle.addEventListener("click", function () {
 		if (flag1 == true) {
 			theme.style.width = "0%";
+			themeicon.style.opacity = 0;
 			handle.style.right = "0%";
 			flag1 = false;
 		} else {
+			themeicon.style.opacity = 1;
 			handle.style.right = "5%";
 			theme.style.width = "5%";
 			flag1 = true;
@@ -269,6 +272,7 @@ function themechange() {
 	var lighttheme = document.querySelector("#theme #light");
 	var minimaltheme = document.querySelector("#theme #minimal");
 	var darktheme = document.querySelector("#theme #dark");
+	var headcolor = document.querySelector("#section4 h1");
 
 	// function myFunction_get() {
 	// 	// Get the styles (properties and values) for the root
@@ -276,8 +280,13 @@ function themechange() {
 	//   }
 
 	lighttheme.addEventListener("click", function () {
-		document.querySelector("#home").style.backgroundColor = "blue";
+		main.style.backgroundColor = "rgb(213, 167, 180)";
 	});
-	minimaltheme.addEventListener("click", function () {});
-	darktheme.addEventListener("click", function () {});
+	minimaltheme.addEventListener("click", function () {
+		main.style.backgroundColor = "rgb(158, 158, 77)";
+	});
+	darktheme.addEventListener("click", function () {
+		main.style.backgroundColor = "#2d2420";
+	});
 }
+themechange();
