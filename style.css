@@ -60,7 +60,7 @@ html {
 	top: 0%;
 	left: 0%;
 	color: #d2006b;
-	display: none;
+	/* display: none; */
 }
 
 .loader {

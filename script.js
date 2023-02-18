@@ -1,10 +1,15 @@
 /** @format */
 
+// function loader() {
+// 	window.addEventListener("load", function () {
+// 		setTimeout(() => {
+// 			this.document.querySelector("#loader").style.display = "none";
+// 		}, 3000);
+// 	});
+// }
 function loader() {
 	window.addEventListener("load", function () {
-		setTimeout(() => {
-			this.document.querySelector("#loader").style.display = "none";
-		}, 3000);
+		this.document.querySelector("#loader").style.display = "none";
 	});
 }
 loader();
