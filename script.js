@@ -60,13 +60,21 @@ swipe();
 
 var tl = gsap.timeline();
 
-tl.to("#topcnt .child span", {
+tl.to("#section5 .child span", {
 	x: 100,
 	delay: 0,
 	stagger: 0.2,
+	scrollTrigger: {
+		trigger: ".child span",
+		scroller: "body",
+		// markers: true,
+		scrub: 2,
+		start: "top -770%",
+		end: "top 10%",
+	},
 	duration: 0.2,
 	ease: Power3.easeInOut,
-}).from("#topcnt .parent .child", {
+}).from(" .parent .child", {
 	y: "-100%",
 	duration: 0.2,
 	ease: Circ.easeInOut,

@@ -1077,3 +1077,87 @@ html {
 		font-size: 1em;
 	}
 }
+/* section 5 */
+#section5 {
+	height: 150vh;
+	width: 100%;
+	/* background-color: red; */
+	color: #fef3f9;
+	position: relative;
+	overflow: hidden;
+}
+.reveal .parent {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	overflow-y: hidden;
+}
+.child span {
+	display: inline-block;
+}
+.reveal .parent .child {
+	display: block;
+}
+#section5 > h1 {
+	font-size: 5vw;
+	font-weight: 800;
+	margin-left: 3vw;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	font-family: Gilroy;
+}
+#section5 #foodscroller {
+	/* height: 26%; */
+	height: 40vh;
+	width: 100%;
+	display: block;
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	/* background-color: #b9f80d; */
+}
+#foodscroller::-webkit-scrollbar {
+	display: none;
+}
+#foodscroller #empty {
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	background-color: transparent;
+}
+#foodscroller .fooddiv {
+	/* transform: translateX(-1650%); */
+	height: 100%;
+	width: 24%;
+	margin: auto 4vw;
+	background-color: #cba0b3;
+	display: inline-block;
+	object-fit: cover;
+	object-position: center;
+}
+.fooddiv img {
+	width: 100%;
+	height: 100%;
+}
+#orderbtn {
+	height: 4vw;
+	width: 4vw;
+	background-color: #fff;
+	position: absolute;
+	bottom: 10%;
+	left: 3%;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	font-size: 1vw;
+	font-family: Gloss And Bloom;
+	/* transform: scale(3); */
+}
+#orderbtn #overlay2 {
+	height: 100vh;
+	width: 100%;
+	display: none;
+	background-color: red;
+}
