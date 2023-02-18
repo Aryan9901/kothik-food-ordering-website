@@ -38,7 +38,7 @@ gsap.to("#foodscroller .fooddiv", {
 		// markers: true,
 		scrub: 2,
 		start: "top 70%",
-		end: "top -40%",
+		end: "top 0%",
 		// pin: true,
 	},
 });
@@ -51,15 +51,32 @@ gsap.to("#orderbtn", {
 		trigger: "#orderbtn",
 		scrub: 2,
 		// markers: true,
-		start: "top 115%",
-		end: "top 80%",
+		start: "top 125%",
+		end: "top 90%",
 		// pin: true,
 	},
 	onUpdate: function () {
 		document.querySelector("#orderbtn p").style.display = "none";
-		document.querySelector("#orderbtn #overlay2").style.display = "none";
 	},
-	onComplete: function () {
-		document.querySelector("#orderbtn #overlay2").style.display = "block";
-	},
+
+	// onComplete: function () {
+	// document.querySelector("#orderbtn #overlay3").style.display = "block";
+	// alert("okk");
+	// document.querySelector("#orderbtn").style.height = "100vh";
+	// document.querySelector("#orderbtn").style.width = "100%";
+	// document.querySelector("#orderbtn").style.borderRadius = "0";
+	// document.querySelector("#orderbtn").style.transform = `scale(${1})`;
+	// },
 });
+// gsap.to("#overlay6", {
+// 	display: "block",
+// 	scrollTrigger: {
+// 		scrub: 3,
+// 		scroller: "body",
+// 		trigger: "#overlay6",
+// 		// markers: true,
+// 		start: "top 70%",
+// 		end: "top 10%",
+// 	},
+// 	ease: Expo.easeInOut,
+// });
