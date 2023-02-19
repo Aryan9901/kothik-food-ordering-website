@@ -60,7 +60,7 @@ html {
 	top: 0%;
 	left: 0%;
 	color: #d2006b;
-	/* display: none; */
+	display: none;
 }
 
 .loader {
@@ -1523,7 +1523,63 @@ html {
 	width: 16%;
 	background-color: #fef3f9;
 }
+#category .item:hover {
+	background-color: salmon;
+}
 .item i {
 	font-size: 1.6vw;
 	color: brown;
+}
+#middlecnt > h1 {
+	font-size: 1.8vw;
+	font-weight: 800;
+	font-family: Ogg, Gilroy;
+	margin: 1vw 4vw;
+}
+#middlecnt #food {
+	overflow-y: hidden;
+	overflow-x: scroll;
+	justify-content: space-around;
+	height: 35%;
+	width: 100%;
+	white-space: nowrap;
+}
+#food::-webkit-scrollbar {
+	display: none;
+}
+#food .foody {
+	display: inline-block;
+	height: 90%;
+	width: 25%;
+	border-radius: 2vw;
+	margin: 1vw 2vw;
+	/* background-color: #fef3f8; */
+	object-fit: cover;
+	object-position: center;
+	position: relative;
+	background-size: cover;
+	/* background-position: center; */
+	background-image: url(./images/rubber-background-2.gif);
+}
+#food .foody img {
+	width: 90%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	margin-top: 0.6vw;
+	/* background-color: grey; */
+	/* margin-bottom: 1vw; */
+}
+#food .foody p {
+	position: absolute;
+	bottom: 25%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 1.6vw;
+	font-weight: 900;
+	font-family: Gilroy;
+}
+#food .foody:hover {
+	background-color: #fef3f9;
 }
