@@ -45,6 +45,11 @@ function changenavcolor() {
 changenavcolor();
 function swipe() {
 	const swiper = new Swiper("#topcnt .swiper", {
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
 		// Optional parameters
 		direction: "horizontal",
 		loop: true,
@@ -166,6 +171,14 @@ cursor();
 
 function swipe2() {
 	const swiper = new Swiper("#foodright .swiper", {
+		autoplay: {
+			delay: 2000,
+			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		640: {
+			direction: "horizontal",
+		},
 		// Optional parameters
 		direction: "vertical",
 		effect: "coverflow",
@@ -265,7 +278,7 @@ function handleopen() {
 	var themeicon = document.querySelector("#theme #light");
 	var minimalicon = document.querySelector("#theme #minimal");
 	var darkicon = document.querySelector("#theme #dark");
-	var flag1 = true;
+	var flag1 = false;
 	handle.addEventListener("click", function () {
 		if (flag1 == true) {
 			theme.style.width = "0%";

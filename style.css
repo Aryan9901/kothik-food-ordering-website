@@ -182,7 +182,7 @@ html {
 	right: 0%;
 	transform: translate(0, -50%);
 	height: 70vh;
-	width: 5%;
+	width: 0%;
 	background-color: grey;
 	z-index: 99;
 	border-top-left-radius: 8vw;
@@ -200,7 +200,7 @@ html {
 	position: fixed;
 	top: 50%;
 	z-index: 9999;
-	right: 5%;
+	right: 0%;
 	transform: translate(0%, -50%);
 	background-color: pink;
 	border-top-left-radius: 6vw;
@@ -208,7 +208,10 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+#theme i {
+	opacity: 0;
 }
 #handle h1 {
 	font-size: 0.8vw;
@@ -1647,3 +1650,8 @@ footer p {
 	font-size: 1.9em;
 }
 /*  media query section */
+@media (max-width: 741px) {
+	#section1 #food {
+		margin-top: 25vw;
+	}
+}
