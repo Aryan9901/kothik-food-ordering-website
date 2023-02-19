@@ -262,16 +262,22 @@ list();
 function handleopen() {
 	var handle = document.querySelector("#handle");
 	var theme = document.querySelector("#theme");
-	var themeicon = document.querySelector("#theme i");
+	var themeicon = document.querySelector("#theme #light");
+	var minimalicon = document.querySelector("#theme #minimal");
+	var darkicon = document.querySelector("#theme #dark");
 	var flag1 = true;
 	handle.addEventListener("click", function () {
 		if (flag1 == true) {
 			theme.style.width = "0%";
 			themeicon.style.opacity = 0;
+			minimalicon.style.opacity = 0;
+			darkicon.style.opacity = 0;
 			handle.style.right = "0%";
 			flag1 = false;
 		} else {
 			themeicon.style.opacity = 1;
+			minimalicon.style.opacity = 1;
+			darkicon.style.opacity = 1;
 			handle.style.right = "5%";
 			theme.style.width = "5%";
 			flag1 = true;
