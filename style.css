@@ -228,6 +228,7 @@ html {
 	/* background-color: #2d2420; */
 	border-top: 0.001px solid transparent;
 	/* position: relative; */
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #home #topcnt {
 	height: 55%;
@@ -235,6 +236,7 @@ html {
 	/* background-color: #d2006b; */
 	margin: 8vw auto 1vw auto;
 	position: relative;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
 #headingtxt {
@@ -247,6 +249,7 @@ html {
 	align-items: center;
 	justify-content: center;
 	height: 55vh;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	/* background-color: red; */
 	/* width: 80vw; */
 }
@@ -316,6 +319,7 @@ html {
 	height: 100%;
 	pointer-events: none;
 	/* background-color: blue; */
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #topcnt .swiper .swiper-wrapper .swiper-slide {
 	height: 100%;
@@ -323,10 +327,12 @@ html {
 	/* background-color: red; */
 	object-fit: 100% 50%;
 	object-position: bottom;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #topcnt .swiper-slide img {
 	width: 100%;
 	height: 100%;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #topcnt .swiper-button-next,
 #topcnt .swiper-rtl .swiper-button-prev {
@@ -334,6 +340,7 @@ html {
 	left: auto;
 	top: 60%;
 	pointer-events: all;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #topcnt .swiper-button-prev,
 #topcnt .swiper-rtl .swiper-button-next {
@@ -341,6 +348,7 @@ html {
 	right: auto;
 	top: 60%;
 	pointer-events: all;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 /* swiper js styling ends */
 
@@ -351,6 +359,7 @@ html {
 	margin: 0vw auto 0vw auto;
 	padding: 1vw 0vw;
 	position: relative;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #btmcnt #cardiv {
 	width: 100%;
@@ -361,6 +370,7 @@ html {
 	gap: 2vw;
 	/* background-color: blue; */
 	/* position: relative; */
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
 #cardiv .cards {
 	/* position: absolute; */
@@ -374,26 +384,30 @@ html {
 	background-size: cover;
 	background-position: center;
 	border-radius: 1vw;
-	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 9s;
 }
 #cardiv .cards:hover {
 	position: relative;
 	top: -25%;
-	transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+	/* transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s; */
 }
 #cardiv #card1 {
 	background-image: url(./images/card1bg.jpeg);
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 3s;
 }
 #cardiv #card2 {
 	background-image: url(./images/restaurent1.jpg);
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 3s;
 }
 #cardiv #card3 {
 	background-image: url(./images/table.jpg);
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 3s;
 }
 #cardiv #card4 {
 	background-image: url(./images/foodorder.jpg);
 	/* position: relative;
 	top: -25%; */
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 3s;
 }
 /* section2 */
 #section1 {
@@ -402,6 +416,7 @@ html {
 	/* padding-top: 12vw; */
 	/* height: 100vh; */
 	/* background-color: #2d2420; */
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #section1 #food {
 	margin: 0 auto;
@@ -410,6 +425,7 @@ html {
 	background-color: #f4eddf;
 	display: flex;
 	align-items: center;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	justify-content: center;
 }
 #foodleft {
@@ -420,6 +436,7 @@ html {
 	justify-content: center;
 	flex-direction: column;
 	row-gap: 3vw;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #foodleft p {
 	font-size: 1.7vw;
@@ -427,6 +444,7 @@ html {
 	line-height: 1;
 	font-family: Gilroy;
 	color: #cba0b3;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	font-weight: 900;
 }
 #foodleft #ser {
@@ -434,6 +452,7 @@ html {
 	align-items: center;
 	justify-content: space-around;
 	width: 100%;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	height: 10vh;
 	/* background-color: red; */
 	font-size: 1vw;
@@ -445,6 +464,7 @@ html {
 	/* background-color: #b9f80d; */
 	border-bottom: 0.12vw solid #222;
 	white-space: nowrap;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #ser #serr {
 	white-space: nowrap;
@@ -452,24 +472,29 @@ html {
 	width: 38%;
 	padding-bottom: 0.5vw;
 	border-bottom: 0.12vw solid #222;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	/* background-color: #b9f80d; */
 }
 #food #foodleft img {
 	width: 70%;
 	margin-top: 3vw;
 	height: 30%;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #food img {
 	height: 100%;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	width: 30%;
 }
 #foodright {
 	height: 100%;
 	width: 40%;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	/* background-color: blue; */
 }
 #foodright .swiper {
 	width: 100%;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	/* background-color: red; */
 	height: 100%;
 	z-index: 8;
@@ -477,12 +502,14 @@ html {
 #foodright .swiper .swiper-wrapper {
 	height: 100%;
 	width: 100%;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	/* background-color: burlywood; */
 }
 #foodright .swiper .swiper-wrapper .swiper-slide {
 	height: 33%;
 	width: 100%;
 	object-fit: cover;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 	display: flex;
 	flex-direction: column;
@@ -493,6 +520,7 @@ html {
 
 #foodright .swiper .swiper-wrapper .swiper-slide img {
 	width: 100%;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	height: 100%;
 }
 #foodright .swiper-button-next,
@@ -501,10 +529,12 @@ html {
 	left: auto;
 	top: 50%;
 	pointer-events: all;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #foodright .swiper-button-prev,
 #foodright .swiper-rtl .swiper-button-next {
 	left: 10px;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	right: auto;
 	top: 50%;
 	pointer-events: all;
@@ -516,6 +546,7 @@ html {
 	position: relative;
 	/* background-color: #2d2420; */
 	min-height: 70vh;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	padding-bottom: 5vh;
 	padding-top: 11vw;
 	color: #fef3f8;
@@ -525,6 +556,7 @@ html {
 	transform: rotateX(270deg);
 	opacity: 0;
 	font-size: 4vw;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	font-weight: 500;
 	width: 80%;
 	margin: 0 auto;
@@ -536,16 +568,19 @@ html {
 }  */
 #page2 h1:nth-child(3) {
 	width: 67%;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	font-size: 3.8vw;
 }
 #page2 h1:nth-child(3) span {
 	font-family: "dancing script";
 	font-weight: 900;
 	font-size: 4.4vw;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 #page2 h1:nth-child(4) {
 	font-family: "dancing script";
 	font-weight: 900;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	width: 60%;
 	font-size: 4.5vw;
 	margin: 0 auto;
@@ -554,6 +589,7 @@ html {
 /* section 3 styling */
 #section3 {
 	height: 140vh;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	width: 100%;
 	/* background-color: #2d2420; */
 	/* background-color: red; */
@@ -562,6 +598,7 @@ html {
 }
 #part2 {
 	height: 100%;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	/* background-color: #2d2420; */
 	position: relative;
 	padding: 10vh 6vw;
@@ -570,12 +607,14 @@ html {
 	height: 2px;
 	width: 20%;
 	background-color: #adadad;
+	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	color: #fef3f8;
 }
 #part2 .card {
 	position: absolute;
 	top: 50%;
 	left: 25%;
+	/* transition: cubic-bezier(0.19, 1, 0.22, 1) 1s; */
 	z-index: 1;
 	transform: translate(-50%, -50%);
 	height: 300px;
@@ -584,7 +623,7 @@ html {
 	color: black;
 	padding: 20px 25px;
 	opacity: 0;
-	transition: all cubic-bezier(0.19, 1, 0.22, 1) 4s;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 2.4s;
 	text-transform: uppercase;
 	background-size: cover;
 	background-position: center;
