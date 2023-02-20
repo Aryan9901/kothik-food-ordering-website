@@ -1,4 +1,27 @@
 /** @format */
+/* font family */
+@font-face {
+	src: url("./fonts/Bree\ Bold.otf");
+	font-family: "bree bold";
+}
+@font-face {
+	src: url("./fonts/Cortado\ Script\ Web\ Regular.ttf");
+	font-family: "cortoda";
+}
+@font-face {
+	src: url("./fonts/helvetica-rounded-bold-5871d05ead8de.otf");
+	font-family: "helvetica rounded";
+}
+/* helvetica and bree bold combination */
+@font-face {
+	src: url("./fonts/Quatro-Book.ttf");
+	font-family: "quatrobook";
+}
+@font-face {
+	src: url("./fonts/Quatro-BookItalic.ttf");
+	font-family: "quatrobook italics";
+}
+/* main style start */
 :root {
 	--glow-color: hsl(186 100% 69%);
 	/* --glow-color: hsl(126 90% 69%); */
@@ -270,12 +293,17 @@ html {
 }
 .elem h1 {
 	font-size: 4vw;
-	font-family: Gloss And Bloom, Gilroy, Times;
+	font-family: Gloss And Bloom, Gilroy, Gilroy, Times;
 	font-weight: 900;
 	-webkit-text-stroke: 2px #fef3f8;
 	color: transparent;
 	pointer-events: none;
 	mix-blend-mode: difference;
+	text-shadow: 0px 0px 10px rgb(32, 119, 218), 0px 0px 20px rgb(32, 119, 218), 0px 0px 40px rgb(32, 119, 218), 0px 0px 80px rgb(32, 119, 218),
+		0px 0px 120px rgb(32, 119, 218), 0px 0px 150px rgb(32, 119, 218);
+}
+.elem h1:hover {
+	text-shadow: none;
 }
 .elem img {
 	position: absolute;
@@ -316,7 +344,7 @@ html {
 /* swiper js code styling starts */
 #topcnt .swiper {
 	width: 100%;
-	height: 100%;
+	height: 89%;
 	pointer-events: none;
 	/* background-color: blue; */
 	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
@@ -442,7 +470,7 @@ html {
 	font-size: 1.7vw;
 	width: 70%;
 	line-height: 1;
-	font-family: Gilroy;
+	font-family: "bree bold", Gilroy;
 	color: #cba0b3;
 	transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
 	font-weight: 900;
@@ -562,6 +590,11 @@ html {
 	margin: 0 auto;
 	transform-origin: left bottom;
 	text-align: center;
+	/* font-family: "cortoda"; */
+	font-family: "bree bold";
+	/* font-family: "helvetica rounded"; */
+	letter-spacing: 0.3vw;
+	word-spacing: 0.5vw;
 }
 /* #page2 h1:nth-child(1) {
 	 width: 64%; 
@@ -595,6 +628,7 @@ html {
 	/* background-color: red; */
 	position: relative;
 	/* margin-bottom: 6vw; */
+	font-family: "bree bold";
 }
 #part2 {
 	height: 100%;
@@ -646,6 +680,8 @@ html {
 }
 .card h2 {
 	font-size: 33px;
+	font-family: "bree bold";
+
 	font-weight: 100;
 }
 .card h3 {
@@ -714,8 +750,9 @@ html {
 }
 #section4 > h1 {
 	font-size: 3vw;
-	font-family: Gilroy;
+	font-family: "helvetica rounded", "cortoda", Gilroy;
 	font-weight: 700;
+	letter-spacing: 0.3vw;
 	margin-top: 2.3vw;
 	margin-left: 9vw;
 	color: #fef3f8;
@@ -733,6 +770,7 @@ html {
 	/* background-color: yellow; */
 	border: 0.1vw solid #333;
 	display: flex;
+	font-family: "bree bold";
 }
 #tophead #top-l {
 	height: 100%;
@@ -776,6 +814,7 @@ html {
 	width: 100%;
 	background-color: #f0f0f0;
 	display: flex;
+	font-family: "quatrobook";
 }
 #btmcnt #btm-l {
 	/* width: calc(100% / 3); */
