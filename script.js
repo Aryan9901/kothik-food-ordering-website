@@ -313,12 +313,15 @@ function themechange() {
 
 	lighttheme.addEventListener("click", function () {
 		main.style.backgroundColor = "rgb(213, 167, 180)";
+		document.querySelector("#navbar").style.backgroundColor = "rgb(213,167,180)";
 	});
 	minimaltheme.addEventListener("click", function () {
-		main.style.backgroundColor = "rgb(158, 158, 77)";
+		main.style.backgroundColor = "rgb(233,132,104)";
+		document.querySelector("#navbar").style.backgroundColor = "rgb(233,132,104)";
 	});
 	darktheme.addEventListener("click", function () {
 		main.style.backgroundColor = "#2d2420";
+		document.querySelector("#navbar").style.backgroundColor = "#2d2420";
 	});
 }
 themechange();
