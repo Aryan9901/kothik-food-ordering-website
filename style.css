@@ -1,6 +1,10 @@
 /** @format */
 /* font family */
 @font-face {
+	font-family: Gloss And Bloom;
+	src: url(./fonts/Gloss_And_Bloom.ttf);
+}
+@font-face {
 	src: url("./fonts/Bree\ Bold.otf");
 	font-family: "bree bold";
 }
