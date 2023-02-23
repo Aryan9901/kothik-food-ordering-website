@@ -239,6 +239,7 @@ html {
 	transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
 	box-shadow: 0px 0px 10px rgb(32, 119, 218), 0px 0px 20px rgb(32, 119, 218), 0px 0px 40px rgb(32, 119, 218), 0px 0px 80px rgb(32, 119, 218),
 		0px 0px 120px rgb(32, 119, 218), 0px 0px 150px rgb(32, 119, 218);
+	animation: border-flicker 2s linear infinite;
 }
 #theme h1 {
 	font-size: 0.9vw;
