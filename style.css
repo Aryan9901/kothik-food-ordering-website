@@ -169,6 +169,7 @@ html {
 	transform: translate(-50%, -50%);
 	height: 90vh;
 	width: 49%;
+	display: none;
 	border-radius: 2vw;
 	background-color: #7aaebf;
 	z-index: 999999;

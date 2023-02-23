@@ -10,8 +10,8 @@
 function loader() {
 	window.addEventListener("load", function () {
 		this.document.querySelector("#loader").style.display = "none";
-		popup.style.display = "block";
 	});
+	popup.style.display = "block";
 }
 loader();
 
