@@ -273,23 +273,26 @@ function list() {
 
 list();
 function handleopen() {
+	var h1t = document.querySelector("#theme h1");
 	var handle = document.querySelector("#handle");
 	var theme = document.querySelector("#theme");
-	var themeicon = document.querySelector("#theme #light");
+	// var themeicon = document.querySelector("#theme #light");
 	var minimalicon = document.querySelector("#theme #minimal");
 	var darkicon = document.querySelector("#theme #dark");
 	var flag1 = false;
 	handle.addEventListener("click", function () {
 		if (flag1 == true) {
 			theme.style.width = "0%";
-			themeicon.style.opacity = 0;
+			// themeicon.style.opacity = 0;
 			minimalicon.style.opacity = 0;
 			darkicon.style.opacity = 0;
+			h1t.style.opacity = 0;
 			handle.style.right = "0%";
 			flag1 = false;
 		} else {
-			themeicon.style.opacity = 1;
+			// themeicon.style.opacity = 1;
 			minimalicon.style.opacity = 1;
+			h1t.style.opacity = 1;
 			darkicon.style.opacity = 1;
 			handle.style.right = "5%";
 			theme.style.width = "5%";
@@ -301,7 +304,7 @@ handleopen();
 
 function themechange() {
 	var rootvar = document.querySelector(":root");
-	var lighttheme = document.querySelector("#theme #light");
+	// var lighttheme = document.querySelector("#theme #light");
 	var minimaltheme = document.querySelector("#theme #minimal");
 	var darktheme = document.querySelector("#theme #dark");
 	var headcolor = document.querySelector("#section4 h1");
@@ -311,17 +314,17 @@ function themechange() {
 	// 	var rs = getComputedStyle(rootvar);
 	//   }
 
-	lighttheme.addEventListener("click", function () {
-		main.style.backgroundColor = "rgb(213, 167, 180)";
-		document.querySelector("#navbar").style.backgroundColor = "rgb(213,167,180)";
-	});
+	// lighttheme.addEventListener("click", function () {
+	// 	main.style.backgroundColor = "rgb(233,132,104)";
+	// 	document.querySelector("#navbar").style.backgroundColor = "rgb(233,132,104)";
+	// });
 	minimaltheme.addEventListener("click", function () {
-		main.style.backgroundColor = "rgb(233,132,104)";
-		document.querySelector("#navbar").style.backgroundColor = "rgb(233,132,104)";
-	});
-	darktheme.addEventListener("click", function () {
 		main.style.backgroundColor = "#2d2420";
 		document.querySelector("#navbar").style.backgroundColor = "#2d2420";
+	});
+	darktheme.addEventListener("click", function () {
+		main.style.backgroundColor = "rgb(213, 167, 180)";
+		document.querySelector("#navbar").style.backgroundColor = "rgb(213,167,180)";
 	});
 }
 themechange();
