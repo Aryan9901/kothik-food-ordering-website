@@ -10,7 +10,7 @@
 function loader() {
 	window.addEventListener("load", function () {
 		this.document.querySelector("#loader").style.display = "none";
-		this.alert("open");
+		// this.alert("open");
 		this.document.querySelector("#popup").style.display = "initial";
 	});
 }
