@@ -10,6 +10,7 @@
 function loader() {
 	window.addEventListener("load", function () {
 		this.document.querySelector("#loader").style.display = "none";
+		popup.style.display = "block";
 	});
 }
 loader();
@@ -328,3 +329,14 @@ function themechange() {
 	});
 }
 themechange();
+
+function popup() {
+	var popup = document.querySelector("#popup");
+	var close = document.querySelector("#popup i");
+	// var close = document.querySelector("#popup i");
+
+	close.addEventListener("click", function () {
+		popup.style.display = "none";
+	});
+}
+popup();

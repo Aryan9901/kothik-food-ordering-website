@@ -48,6 +48,267 @@ html {
 	position: relative;
 	background-color: #2d2420;
 }
+#popup .divs {
+	height: 90vh;
+	width: 100%;
+	border-radius: 2vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999999;
+	background-color: grey;
+	transform-origin: -50% -50%;
+}
+#popup #div1 {
+	background-color: #fef3f8;
+	z-index: 9999999;
+	transform: translate(-50%, -50%) rotate(-75deg) scale(0);
+	transform-origin: 50% 50%;
+	animation-name: background_image1;
+	animation-duration: 3s;
+	/* animation-delay: 0s; */
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	/* animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+	animation-iteration-count: infinite;
+}
+#popup #div2 {
+	transform-origin: 50% 50%;
+	transform: translate(-50%, -50%) rotate(-75deg) scale(0);
+	background-color: #2d2420;
+	transform-origin: 50% 50%;
+	z-index: 99999999;
+	animation-name: background_image2;
+	animation-duration: 3s;
+	/* animation-delay: 1s; */
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	/* animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+	animation-iteration-count: infinite;
+}
+#popup #div3 {
+	transform-origin: 50% 50%;
+	transform: translate(-50%, -50%) rotate(-75deg) scale(0);
+	background-color: yellow;
+	z-index: 999999999;
+	animation-name: background_image;
+	animation-duration: 3s;
+	/* animation-delay: 2s; */
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	/* animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+	animation-iteration-count: infinite;
+}
+#popup #div4 {
+	transform-origin: 50% 50%;
+	transform: translate(-50%, -50%) rotate(-75deg) scale(0);
+	background-color: green;
+	z-index: 9999999999;
+	animation-name: background_image;
+	animation-duration: 3s;
+	/* animation-delay: 3s; */
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	/* animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+	animation-iteration-count: infinite;
+}
+@keyframes background_image1 {
+	0%,
+	10% {
+		transform: translate(-50%, -50%) rotate(-76deg) scale(0);
+	}
+	50% {
+		transform: translate(-50%, -50%) rotate(-38deg) scale(0.5);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg) scale(1);
+	}
+}
+@keyframes background_image2 {
+	0%,
+	20% {
+		transform: translate(-50%, -50%) rotate(-76deg) scale(0);
+	}
+	60% {
+		transform: translate(-50%, -50%) rotate(-38deg) scale(0.5);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg) scale(1);
+	}
+}
+@keyframes background_image3 {
+	0%,
+	30% {
+		transform: translate(-50%, -50%) rotate(-76deg) scale(0);
+	}
+	50% {
+		transform: translate(-50%, -50%) rotate(-38deg) scale(0.5);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg) scale(1);
+	}
+}
+@keyframes background_image4 {
+	0%,
+	40% {
+		transform: translate(-50%, -50%) rotate(-76deg) scale(0);
+	}
+	50% {
+		transform: translate(-50%, -50%) rotate(-38deg) scale(0.5);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg) scale(1);
+	}
+}
+#popup {
+	position: fixed;
+	/* position: relative; */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 90vh;
+	width: 49%;
+	border-radius: 2vw;
+	background-color: #7aaebf;
+	z-index: 999999;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#popup #divf {
+	height: 100%;
+	width: 100%;
+	border-radius: 2vw;
+	background-color: rgba(255, 0, 0, 0);
+	position: absolute;
+	/* background-color: red; */
+	z-index: 9999999999999;
+}
+#popup i {
+	position: relative;
+	top: 4%;
+	left: 88%;
+	font-size: 4vw;
+	color: #fef3f8;
+	z-index: 99999999999999999;
+}
+#popup #h1anim {
+	width: 50%;
+	height: fit-content;
+	margin: 2.4vw auto;
+	/* background-color: #000; */
+	white-space: nowrap;
+	overflow: hidden;
+	padding-left: 2vw;
+	margin-top: 0vw;
+	/* animation-timing-function: linear; */
+	/* animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+	animation-name: letter_display;
+	animation-duration: 4s;
+	animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+	animation-iteration-count: infinite;
+	animation-direction: forwards;
+}
+@keyframes letter_display {
+	0% {
+		width: 50%;
+	}
+	10% {
+		width: 40%;
+	}
+	20% {
+		width: 30%;
+	}
+	30% {
+		width: 20%;
+	}
+	40% {
+		width: 10%;
+	}
+	50% {
+		width: 0%;
+	}
+	60% {
+		width: 10%;
+	}
+	70% {
+		width: 20%;
+	}
+	80% {
+		width: 30%;
+	}
+	90% {
+		width: 40%;
+	}
+	100% {
+		width: 50%;
+	}
+}
+#popup h1 {
+	font-size: 3vw;
+	width: 100%;
+	/* margin: 1.7vw auto; */
+	font-family: "bree bold";
+	color: #fff;
+}
+#popup p:nth-child(3) {
+	font-size: 1.5vw;
+	color: #fef3f8;
+	width: 42%;
+	font-family: "helvetica round";
+	margin: 1.7vw auto;
+	text-align: left;
+	/* background-color: red; */
+}
+#popup #h3anim {
+	width: 50%;
+	height: fit-content;
+	margin: 1.7vw auto;
+	white-space: nowrap;
+	overflow: hidden;
+	padding-left: 2vw;
+}
+#popup #h3anim h3 {
+	font-size: 1.8vw;
+	font-family: "helvetica round";
+	width: 100%;
+	color: #fef3f8;
+}
+#popup #btn1,
+#popup #btn2 {
+	font-size: 1.8vw;
+	color: rgb(218, 74, 173);
+	padding: 1vw 1.8vw;
+	border: 0.1vw solid #adadae;
+	width: fit-content;
+	height: fit-content;
+	background-color: #fef3f8;
+	margin: 2vw auto;
+	position: relative;
+	border-radius: 0.6vw;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+}
+#popup #btn2 {
+	padding: 1vw 3.3vw;
+}
+#popup #btn1::before,
+#popup #btn2::before {
+	content: "";
+	border-radius: 0.6vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	z-index: -1;
+	/* transform: translate(0%, 0%); */
+}
+#popup .btn12:hover {
+	transform: translateY(10%);
+	transform: translateX(10%);
+}
 /* cursor styling */
 #cursor {
 	height: 0.8vw;
