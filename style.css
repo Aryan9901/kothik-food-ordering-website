@@ -173,7 +173,7 @@ html {
 	border-radius: 2vw;
 	background-color: #7aaebf;
 	z-index: 999999;
-	transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
 }
 
 #popup #divf {
