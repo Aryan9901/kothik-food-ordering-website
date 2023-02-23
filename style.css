@@ -417,6 +417,7 @@ html {
 	background-color: #2d2420;
 	z-index: 2999;
 	display: flex;
+	font-family: "bree bold";
 }
 
 #navbar #brand {
