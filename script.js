@@ -11,7 +11,14 @@ function loader() {
 	window.addEventListener("load", function () {
 		this.document.querySelector("#loader").style.display = "none";
 		// this.alert("open");
-		this.document.querySelector("#popup").style.display = "initial";
+		gsap.to("#popup", {
+			display: "block",
+			opacity: 1,
+			ease: Expo.easeInOut.Power3,
+			duration: 1,
+			// delay: 1,
+		});
+		// this.document.querySelector("#popup").style.display = "initial";
 	});
 }
 loader();
